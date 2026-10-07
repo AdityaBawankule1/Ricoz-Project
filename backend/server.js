@@ -170,5 +170,4 @@ mongoose.connect(mongoUri)
   .then(() => console.log('✅ MongoDB connected'))
   .catch((err) => console.error('❌ MongoDB connection failed:', err.message));
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 Kind Paws server running on port ${PORT}`));
+module.exports = app;
