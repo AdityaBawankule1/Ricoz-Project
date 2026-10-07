@@ -420,4 +420,4 @@ Change the backend port in `.env`, or stop the previous process using the proces
 
 ## License
 
-This project is currently unlicensed. Add a license file before publishing or distributing the application.
+This project is currently unlicensed.
