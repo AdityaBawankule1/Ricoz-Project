@@ -38,7 +38,7 @@ export default function Login({ onLoginSuccess }) {
     try {
       const endpoint = isLogin ? '/api/login' : '/api/signup';
       const apiUrl = process.env.REACT_APP_API_URL ||
-        'https://ricoz-backend-6wjbjiprm-aditya-bawankules-projects-19b949fb.vercel.app';
+        'https://ricoz-backend.vercel.app';
       const response = await fetch(`${apiUrl}${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
