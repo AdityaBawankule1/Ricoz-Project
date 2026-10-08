@@ -24,7 +24,9 @@ const BookingForm = ({ trainer, onCancel }) => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/bookings', {
+      const apiUrl = process.env.REACT_APP_API_URL ||
+        'https://ricoz-backend-6wjbjiprm-aditya-bawankules-projects-19b949fb.vercel.app';
+      const response = await fetch(`${apiUrl}/api/bookings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
